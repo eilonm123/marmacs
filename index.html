@@ -69,12 +69,16 @@
             align-items: center;
         }
 
-        .logo {
-          .logo {
-    height: 60px;        /* הייתי: 40px */
-    width: auto;         /* חדש: שומר על פרופורציות */
-    max-width: 200px;    /* חדש: מגביל רוחב מקסימלי */
-    transition: transform 0.3s ease;
+ /* מחשב */
+height: 50px;
+max-width: 140px;
+
+/* טלפון */
+@media (max-width: 768px) {
+    .logo {
+        height: 40px;
+        max-width: 120px;
+    }
 }
         }
 
