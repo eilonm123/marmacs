@@ -69,17 +69,11 @@
             align-items: center;
         }
 
- /* מחשב */
-height: 50px;
-max-width: 140px;
-
-/* טלפון */
-@media (max-width: 768px) {
-    .logo {
-        height: 40px;
-        max-width: 120px;
-    }
-}
+  .logo {
+            height: 50px;
+            width: auto;
+            max-width: 140px;
+            transition: transform 0.3s ease;
         }
 
         .logo:hover {
@@ -436,6 +430,12 @@ max-width: 140px;
 
         /* Responsive */
         @media (max-width: 768px) {
+        
+    .logo {
+        height: 40px;
+        max-width: 120px;
+    }
+
             .hero h1 {
                 font-size: 2.5rem;
             }
