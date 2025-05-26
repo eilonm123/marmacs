@@ -70,8 +70,12 @@
         }
 
         .logo {
-            height: 40px;
-            transition: transform 0.3s ease;
+          .logo {
+    height: 60px;        /* הייתי: 40px */
+    width: auto;         /* חדש: שומר על פרופורציות */
+    max-width: 200px;    /* חדש: מגביל רוחב מקסימלי */
+    transition: transform 0.3s ease;
+}
         }
 
         .logo:hover {
