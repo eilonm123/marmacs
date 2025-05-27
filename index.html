@@ -352,19 +352,21 @@
             border: 1px solid rgba(59, 130, 246, 0.2);
         }
 
-        .stat-number {
+        
+    .stat-number {
     font-size: 1.5rem;
     font-weight: 700;
     color: #3b82f6;
     margin-bottom: 0.5rem;
     line-height: 1.2;
     word-wrap: break-word;
-    max-width: 100%;
+    max-width: 150px; /* הגבלת רוחב מקסימלי */
     text-align: center;
-    height: 3rem;
+    min-height: 3.5rem; /* הגדלנו את הגובה המינימלי */
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
         .stat-label {
