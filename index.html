@@ -344,54 +344,124 @@
             margin-top: 2rem;
         }
 
-/* כללי בסיס קיימים */
-.stat {
-    text-align: center;
-    padding: 2rem;
-    background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(139, 92, 246, 0.1));
-    border-radius: 15px;
-    border: 1px solid rgba(59, 130, 246, 0.2);
-}
+        .stat {
+            text-align: center;
+            padding: 1.5rem;
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(139, 92, 246, 0.1));
+            border-radius: 15px;
+            border: 1px solid rgba(59, 130, 246, 0.2);
+        }
 
-.stat-number {
-    font-size: 1.3rem;
-    font-weight: 700;
-    color: #3b82f6;
-    margin-bottom: 0.5rem;
-    line-height: 1.2;
-    word-wrap: break-word;
-    max-width: 180px;
-    text-align: center;
-    min-height: 4rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #3b82f6;
+            margin-bottom: 0.5rem;
+        }
 
-.stat-label {
-    color: #a0a0a0;
-    font-size: 0.9rem;
-    text-align: center;
-}
+        .stat-label {
+            color: #a0a0a0;
+            font-size: 0.9rem;
+        }
 
-/* התאמה רספונסיבית למסכים קטנים (עד 768px) */
-@media (max-width: 768px) {
-    .stats {
-        grid-template-columns: 1fr; /* שורה אחת במובייל */
-        gap: 1.5rem; /* מרווח קטן יותר במובייל */
+        /* Contact Section */
+        .contact {
+            padding: 6rem 2rem;
+            background: linear-gradient(135deg, #111111, #1a1a1a);
+            text-align: center;
+        }
+
+        .contact-content {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact h2 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #ffffff, #3b82f6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin: 3rem 0;
+            flex-wrap: wrap;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem 2rem;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            transition: all 0.3s ease;
+        }
+
+        .contact-item:hover {
+            border-color: #3b82f6;
+            transform: translateY(-3px);
+        }
+
+        .contact-icon {
+            font-size: 1.5rem;
+            color: #3b82f6;
+        }
+
+        .contact-text {
+            color: #ffffff;
+            font-weight: 500;
+        }
+
+        /* Footer */
+        footer {
+            padding: 2rem;
+            text-align: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #666;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+        
+    .logo {
+        height: 40px;
+        max-width: 120px;
     }
 
-    .stat-number {
-        font-size: 1.2rem; /* הקטנת גופן במובייל */
-        max-width: 140px; /* הקטנת רוחב מקסימלי במובייל */
-        min-height: 3.5rem; /* הקטנת גובה מינימלי במובייל */
-        justify-content: center; /* וידוא יישור למרכז */
-    }
+            .hero h1 {
+                font-size: 2.5rem;
+            }
 
-    .stat {
-        padding: 1.5rem; /* הקטנת מרווח פנימי במובייל */
-    }
-}
+            .hero .tagline {
+                font-size: 1.2rem;
+            }
+
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .contact-info {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .stats {
+                grid-template-columns: 1fr;
+            }
+        }
 
         /* Scroll animations */
         .fade-in {
