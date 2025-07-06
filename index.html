@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="he" dir="rtl">
 <head>
+    <div class="header-content">
+        <img src="logo.svg" alt="Marmacs Logo" class="logo">
+        <a href="#contact" class="contact-btn">
+            <img src="logo-icon.svg" alt="Marmacs Icon" class="contact-icon">
+            צור קשר
+        </a>
+    </div>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marmacs - Your Mac's Best Friend</title>
@@ -28,6 +35,8 @@
             z-index: -1;
             background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #0a0a0a 100%);
         }
+
+        
 
         .bg-animation::before {
             content: '';
@@ -72,7 +81,7 @@
         .logo {
             height: 70px;
             width: auto;
-            max-width: 200px;
+            max-width: 200apx;
             transition: transform 0.3s ease;
         }
 
@@ -674,6 +683,17 @@
             opacity: 1;
             transform: translateY(0);
         }
+        .contact-icon {
+    height: 20px; /* התאם את הגודל לפי הצורך */
+    width: auto;
+    margin-right: 10px; /* מרווח בין האייקון לטקסט */
+    vertical-align: middle; /* יישור אנכי עם הטקסט */
+    transition: transform 0.3s ease; /* אנימציה כמו בכפתור */
+}
+
+.contact-btn:hover .contact-icon {
+    transform: scale(1.05); /* אנימציה קלה בעת מעבר עכבר */
+}
     </style>
 </head>
 <body>
